@@ -1,0 +1,83 @@
+# ----------------------------
+# OS-specific files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Python bytecode / cache
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ----------------------------
+# Environment / secrets
+# ----------------------------
+.env
+.env.*.local
+
+# ----------------------------
+# Jupyter / notebooks
+# ----------------------------
+.ipynb_checkpoints/
+*.ipynb_kernel.json
+
+# ----------------------------
+# MLflow artifacts & metadata
+# ----------------------------
+mlruns/
+mlflow.db
+mlflow.sqlite
+mlartifacts/
+
+# ----------------------------
+# Logs & temp files
+# ----------------------------
+logs/
+*.log
+*.tmp
+*.bak
+
+# ----------------------------
+# Data files
+# (S3 is source of truth; keep repo light)
+# ----------------------------
+data/
+!data/.gitkeep
+
+# If you want to keep a tiny sample:
+# !data/sample_*.csv
+
+# ----------------------------
+# IDE / editor configs
+# ----------------------------
+
+# VS Code
+.vscode/
+.history/
+
+# PyCharm / IntelliJ
+.idea/
+
+# ----------------------------
+# Build / packaging
+# ----------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ----------------------------
+# OS / misc
+# ----------------------------
+*.swp
+*.swo
