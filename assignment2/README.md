@@ -102,11 +102,11 @@ Key fields:
 The **figures 1** and **2**, shows a description and a visualization of the numerical values in the dataset, revealing that almost all numerical features has *outliers*. 
 
 <br></br>
-!["Description of all numerical features"](images\2_1_describe.png)
+!["Description of all numerical features"](images/2_1_describe.png)
 **Fig. 1.** Description of numerical features.
 
 <br></br>
-!["Histplot of all features"](images\2_2_histogram_all.png)
+!["Histplot of all features"](images/2_2_histogram_all.png)
 **Fig. 2.** Distribution of all features. Outliers can be detected in almost all features
 
 
@@ -186,25 +186,25 @@ The **figures 1** and **2**, shows a description and a visualization of the nume
 ## **4. Screenshots of MLflow UI showing experiment runs, metrics, and model registry.**
 - After logging all experiments to MLflow, by the validation RMSE and registered it in the MLflow Model Registry under the name airbnb_nyc_price_model_manual_preproc. This allows versioned management of models, making it easy to promote the best model to production and compare future versions.
 
-!["Train and test metrics results"](images\train_test.png)
+!["Train and test metrics results"](images/train_test.png)
 **Fig. 3.** *Root Mean Squared Error*, *R2 Score* and *Mean Squared Error* of each one of the models, in training and test. 
 
 <br></br>
 
-!["Validation metrics results"](images\val.png)
+!["Validation metrics results"](images/val.png)
 **Fig. 4.** *Root Mean Squared Error*, *R2 Score* and *Mean Squared Error* of each one of the models (validation). 
 
 - All the models showed some signals of overfitting (with a difference between the results in training stage and validation/test stage).
 
 ## **5. Key insights and observations.**
 
-!["Top 10 most important features in Random Forest"](images\top10_rf.png)
+!["Top 10 most important features in Random Forest"](images/top10_rf.png)
 
 **Fig. 5.** Top 10 most important features in **Random Forest**.
 
 <br></br>
 
-!["Top 10 most important features in Gradient Boosting Regressor"](images\top10_gbr.png)
+!["Top 10 most important features in Gradient Boosting Regressor"](images/top10_gbr.png)
 
 **Fig. 6.** Top 10 most important features in **Gradient Boosting Regressor**
 <br></br>
@@ -212,5 +212,6 @@ The **figures 1** and **2**, shows a description and a visualization of the nume
 - In the the non-linear models (*RF* and *GBR*), *Price* cannot be _perfectly_ explained by these features since there are a lack of other variables, like "pictures of the place", "host quality", "turistic points near" or "events near" and other features.
 
 - There are features in this dataset that are highly skewed (minimum_nights, availability_365, reviews_per_month, number_of_reviews). Even after wensorization and log transformation the skewness remained. This characteristic is showed to be natural of the data (e.g. most bookings are short stays), so trying to normalize this data can remove the meaningful information.
+
 
 - The top 3 features indicates that **location** (*latitude* and *longitude*) and the **room type** (of course, the entire home) are the most important features to guide the price (the other features has not so much importance).
